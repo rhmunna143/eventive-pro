@@ -1,0 +1,11 @@
+
+
+.bg-img {
+    background: url("../../assets/images/banner.jpg"), linear-gradient(rgba(8, 0, 1, 0.75), rgba(34, 7, 102, 0.65));
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.bg-dark {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.50));
+}

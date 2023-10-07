@@ -1,15 +1,37 @@
 /* eslint-disable no-unused-vars */
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
 const Registration = () => {
+    const [passError, setPassError] = useState(null)
+
     const handleRegister = (event) => {
         event.preventDefault()
+
+        const passwordPattern = /^.{6,}$/;
+        const capitalLetterPattern = /[A-Z]/;
+        const specialCharacterPattern = /[^A-Za-z0-9]/;
 
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
+        setPassError("")
+
+        if(!passwordPattern.test(password)) {
+            setPassError("Password must be 6 character or greater!")
+
+            return;
+        } else if(!capitalLetterPattern.test(password)) {
+            setPassError("Password must have one Capital letter!")
+
+            return;
+        } else if(!specialCharacterPattern.test(password)) {
+            setPassError("Password must have a special character!")
+
+            return;
+        }
         
     }
 
@@ -107,6 +129,11 @@ const Registration = () => {
                     >
                         Register
                     </button>
+
+                    {
+                        passError && <p className="text-red-600 mt-2">{passError}</p>
+                    }
+
                     <p className="mt-4 block text-center    text-base font-normal leading-relaxed text-gray-700 antialiased">
                         Already have an account? &nbsp;
                         <Link to="/login">

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Wedding",
+        "image": "https://i.ibb.co/5RJMdNK/wedding-event.jpg",
+        "price": "$10,000 - $50,000",
+        "details": "Celebrate your special day with a beautiful wedding event. Our team will help you plan every detail to make it unforgettable.",
+        "description": "A wedding is a once-in-a-lifetime event, and we are here to make it perfect for you. From selecting the venue to choosing the decor and catering, we've got you covered."
+    },
+    {
+        "id": 2,
+        "title": "Birthday Party",
+        "image": "https://i.ibb.co/Qnw0MrB/birthday-party.jpg",
+        "price": "$500 - $5,000",
+        "details": "Throw an amazing birthday party for yourself or your loved ones. We handle everything from themes to entertainment.",
+        "description": "Birthdays are a time to celebrate, and we'll make sure your party is full of joy and laughter. Whether it's a kids' birthday or an adult celebration, we can create the perfect atmosphere."
+    },
+    {
+        "id": 3,
+        "title": "Engagement Party",
+        "image": "https://i.ibb.co/sb5f8Qj/engagement-party.jpg",
+        "price": "$2,000 - $10,000",
+        "details": "Announce your engagement in style with a memorable engagement party. We'll help you plan an event to cherish forever.",
+        "description": "Celebrate your love and commitment with friends and family at an engagement party that reflects your unique style. From elegant to casual, we've got it all."
+    },
+    {
+        "id": 4,
+        "title": "Retirement Party",
+        "image": "https://i.ibb.co/NWWcyDn/retirement-party-event.jpg",
+        "price": "$1,000 - $5,000",
+        "details": "Say farewell to your career and hello to retirement with a retirement party. We'll make it a special occasion.",
+        "description": "Retirement is a milestone worth celebrating, and we'll help you plan a memorable party to mark the occasion. Whether it's a small gathering or a grand affair, we'll make it special."
+    },
+    {
+        "id": 5,
+        "title": "Baby Shower",
+        "image": "https://i.ibb.co/fvr6QT2/baby-shower-event.jpg",
+        "price": "$500 - $3,000",
+        "details": "Welcome a new addition to your family with a joyous baby shower. We'll take care of the planning so you can enjoy the day.",
+        "description": "Celebrate the upcoming arrival of your little one with a baby shower filled with love and laughter. We'll help you create a memorable event for family and friends."
+    },
+    {
+        "id": 6,
+        "title": "Anniversary Party",
+        "image": "https://i.ibb.co/3h8C01t/aniversary-event.jpg",
+        "price": "$1,500 - $10,000",
+        "details": "Commemorate your years of love and togetherness with a romantic anniversary party. Let us handle the details.",
+        "description": "Anniversaries are a time to celebrate your enduring love. We'll help you plan a romantic and memorable event that honors your journey together."
+    }
+]

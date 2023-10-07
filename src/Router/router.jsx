@@ -5,6 +5,7 @@ import GalleryComp from "../Pages/Gallery/Gallery";
 import TeamCmp from "../Pages/Team/Team";
 import Registration from "../Pages/Registration/Registration";
 import Login from "../Pages/Login/Login";
+import Details from "../Pages/Details/Details";
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login></Login>
+            },
+
+            {
+                path: "/event/details/:id",
+                element: <Details></Details>
             }
         ]
     }

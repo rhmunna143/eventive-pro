@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import team from '../../assets/images/business-team.jpg'
 
 const ShortAbout = () => {
@@ -9,6 +10,8 @@ const ShortAbout = () => {
                 <p className="mt-4">
                     "At <span className="text-pink-600">Eventive</span>, we take pride in being the best in the business. With a passion for excellence and a commitment to perfection, we craft unforgettable experiences for every occasion. Discover why we're your top choice for event management!"
                 </p>
+
+                <button className='bg-pink-600 text-white py-1 px-4 mt-4 rounded-sm hover:bg-black'>Book Us Now</button>
             </div>
 
             <div className="img">

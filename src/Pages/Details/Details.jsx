@@ -1,16 +1,9 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Details = () => {
-
-    const [data, setData] = useState([])
     const params = useParams()
 
-    useEffect(() => {
-        fetch("../../../public/data.json")
-            .then(res => res.json())
-            .then(data => setData(data))
-    }, [])
+    const data = useLoaderData()
 
     const selected = data?.find(item => params.id == item.id);
 

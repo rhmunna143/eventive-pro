@@ -40,6 +40,7 @@ const router = createBrowserRouter([
 
             {
                 path: "/event/details/:id",
+                loader: () => fetch("./data.json"),
                 element: <Details></Details>
             }
         ]

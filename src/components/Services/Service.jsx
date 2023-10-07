@@ -23,7 +23,7 @@ const Service = ({ service }) => {
                 </p>
 
                 <Link to = {`/event/details/${id}`} >
-                    <button className="mt-2 bg-pink-600 text-white py-1 px-4 rounded-sm hover:bg-black w-full">See Details</button>
+                    <button className="mt-4 bg-pink-600 text-white py-1 px-4 rounded-sm hover:bg-black w-full">See Details</button>
                 </Link>
 
             </div>

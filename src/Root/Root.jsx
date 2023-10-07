@@ -4,6 +4,7 @@ import Nav from "../components/Header/Nav";
 import Footer from "../components/Footer/Footer";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Toaster } from "react-hot-toast";
 
 const Root = () => {
     useEffect(() => {
@@ -15,6 +16,10 @@ const Root = () => {
             <Nav></Nav>
             <Outlet></Outlet>
             <Footer></Footer>
+            <Toaster 
+                position="top-right"
+                reverseOrder={false}
+            />
         </div>
     );
 };

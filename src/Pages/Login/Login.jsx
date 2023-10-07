@@ -1,19 +1,36 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Continue from "../../components/Continue/Continue";
+import { useContext, useState } from "react";
+import { AllContext } from "../../Hooks/ContextProvider";
+import toast from "react-hot-toast";
 
 
 const Login = () => {
+    const { login } = useContext(AllContext)
+    const [name, setName] = useState(null)
+
     const handleLogIn = (event) => {
         event.preventDefault()
 
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        
+        login(email, password)
+        .then(response => {
+            const name = response?.user?.displayName;
+            setName(name)
+
+            toast.success(name + " Welcome!! Login success")
+        })
+
+        .catch((err) => {
+            toast.error(err.message)
+        })
     }
+
     return (
         <div>
             <form onSubmit={handleLogIn}>
@@ -104,6 +121,11 @@ const Login = () => {
                     </div>
                 </div>
             </form>
+
+            {
+                name && <Navigate to="/" />
+            }
+
         </div>
     );
 };

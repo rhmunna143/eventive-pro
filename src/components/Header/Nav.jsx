@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import NavMenu from "./NavMenu";
-
+import userShape from "../../assets/images/user-shape.png"
 
 const Nav = () => {
     return (
@@ -16,7 +16,7 @@ const Nav = () => {
             </div>
 
             <div className="user">
-                user info
+                <img className="w-12 h-12 aspect-square rounded-full" src={userShape} alt="user shape img" />
             </div>
         </div>
     );

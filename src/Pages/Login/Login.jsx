@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 
 import { Link } from "react-router-dom";
+import Continue from "../../components/Continue/Continue";
 
 
 const Login = () => {
@@ -78,7 +80,7 @@ const Login = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="p-6 pt-0">
+                    <div className="px-6">
                         <button
                             className="block w-full select-none rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-3 px-6 text-center align-middle   text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                             type="submit"
@@ -95,6 +97,10 @@ const Login = () => {
                                 </button>
                             </Link>
                         </p>
+                    </div>
+
+                    <div className="p-6 pt-0">
+                        <Continue></Continue>
                     </div>
                 </div>
             </form>

@@ -7,7 +7,6 @@ import Wave from "../../components/Wave/Wave";
 
 
 const Home = () => {
-
     return (
         <div>
             <Banner></Banner>

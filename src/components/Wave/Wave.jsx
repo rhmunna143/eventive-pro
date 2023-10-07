@@ -2,7 +2,7 @@ import wave from '../../assets/images/wave.svg'
 
 const Wave = () => {
     return (
-        <div>
+        <div data-aos="fade-down">
             <img src={wave} alt="wave img" />
         </div>
     );

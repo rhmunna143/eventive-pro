@@ -4,11 +4,11 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className="bg-pink-600 text-white py-24">
+        <div className="bg-pink-600 text-white py-24 px-4 lg:px-0">
             <div className="max-w-6xl mx-auto">
                 <div className="nav flex justify-between items-center flex-wrap">
                     <div className="logo">
-                        <h2 className="text-3xl">Eventive</h2>
+                        <h2 className="text-3xl mb-4 md:mb-0">Eventive</h2>
                     </div>
 
                     <div className="text-white">

@@ -1,0 +1,4 @@
+.bg-pnk {
+    background: linear-gradient(rgba(0, 0, 0, 0.656), rgba(135, 78, 73, 0.659));
+    background-blend-mode: overlay;
+}

@@ -1,3 +1,4 @@
+import Counter from "../../components/Counter/Counter";
 import Banner from "../../components/Header/Banner";
 import Services from "../../components/Services/Services";
 import ShortAbout from "../../components/ShortAbout/ShortAbout";
@@ -13,7 +14,7 @@ const Home = () => {
             <Wave></Wave>
             <ShortAbout></ShortAbout>
             <Services></Services>
-
+            <Counter></Counter>
             <Sponsor></Sponsor>
         </div>
     );

@@ -1,14 +1,11 @@
 import { useContext } from "react";
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 import { AllContext } from "../../Hooks/ContextProvider";
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 
 const Continue = () => {
     const { googleSignIn, facebookLogin, socialUser } = useContext(AllContext)
-    const location = useLocation()
-
-    console.log(location);
 
     const handleSocialLogin = (loginType) => {
 

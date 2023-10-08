@@ -9,7 +9,6 @@ export const LoaderComponent = () => {
     return <img className="max-w-[100px]" src={loader} alt="loading spinner" />
 };
 
-
 const PrivateRoute = ({children}) => {
     const { user, loading } = useContext(AllContext)
 

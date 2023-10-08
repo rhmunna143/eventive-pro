@@ -7,6 +7,7 @@ import Registration from "../Pages/Registration/Registration";
 import Login from "../Pages/Login/Login";
 import Details from "../Pages/Details/Details";
 import PrivateRoute from "../Hooks/PrivateRoute";
+import About from "../Pages/About/About";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><TeamCmp></TeamCmp></PrivateRoute>
             },
 
+            {
+                path: "/about",
+                element: <About></About>
+            },
+            
             {
                 path: "/registration",
                 element: <Registration></Registration>

@@ -54,9 +54,9 @@ function ContactForm() {
                 </div>
                 <button
                     type="submit"
-                    className="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300 w-full"
+                    className="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition duration-300 w-full"
                 >
-                    Submit
+                    Send
                 </button>
             </form>
         </div>

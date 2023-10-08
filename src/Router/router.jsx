@@ -8,12 +8,14 @@ import Login from "../Pages/Login/Login";
 import Details from "../Pages/Details/Details";
 import PrivateRoute from "../Hooks/PrivateRoute";
 import About from "../Pages/About/About";
+import NotFound from "../Pages/Error/NotFound";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
+        errorElement: <NotFound></NotFound>,
         children: [
             {
                 path: "/",

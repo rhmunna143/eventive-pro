@@ -15,7 +15,7 @@ const TeamCmp = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
                     data?.map(item=>
-                        <img className="h-[250px] w-[375px]" key={item?.id} src={item?.image} alt="gallery images" />
+                        <img className="h-[250px] w-[375px] mx-auto" key={item?.id} src={item?.image} alt="gallery images" />
                     )
                 }
             </div>

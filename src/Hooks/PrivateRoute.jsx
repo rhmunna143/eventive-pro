@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import { AllContext } from "./ContextProvider";
 import loader from "../assets/images/ldr.gif"
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 export const LoaderComponent = () => {
 
@@ -10,7 +10,11 @@ export const LoaderComponent = () => {
 };
 
 const PrivateRoute = ({children}) => {
-    const { user, loading } = useContext(AllContext)
+    const { user, loading, setPath } = useContext(AllContext)
+    const location = useLocation()
+    const path =location?.pathname;
+
+    setPath(path);
 
     if (loading) {
 

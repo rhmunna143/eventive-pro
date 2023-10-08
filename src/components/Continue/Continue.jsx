@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 
 
 const Continue = () => {
-    const { googleSignIn, facebookLogin, socialUser } = useContext(AllContext)
+    const { googleSignIn, facebookLogin, socialUser, path } = useContext(AllContext)
 
     const handleSocialLogin = (loginType) => {
 
@@ -35,7 +35,7 @@ const Continue = () => {
 
             {
                 socialUser &&
-                <Navigate to="/" />
+                <Navigate to={path || "/"} />
             }
         </div>
     );

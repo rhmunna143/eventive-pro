@@ -13,7 +13,9 @@ const ContextProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const googleProvider = new GoogleAuthProvider();
     const facebookProvider = new FacebookAuthProvider();
+    const [path, setPath] = useState("")
 
+    console.log(user?.photoURL, user);
     const register = (email, password) => {
         setLoading(true)
 
@@ -89,7 +91,9 @@ const ContextProvider = ({ children }) => {
         googleSignIn,
         facebookLogin,
         loading,
-        socialUser
+        socialUser,
+        path,
+        setPath
     }
 
     return (

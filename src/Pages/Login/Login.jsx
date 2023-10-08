@@ -9,9 +9,9 @@ import toast from "react-hot-toast";
 
 
 const Login = () => {
-    const { login } = useContext(AllContext)
+    const { login, path } = useContext(AllContext)
     const [name, setName] = useState(null)
-
+    console.log(path);
     const handleLogIn = (event) => {
         event.preventDefault()
 
@@ -123,7 +123,7 @@ const Login = () => {
             </form>
 
             {
-                name && <Navigate to="/" />
+                name && <Navigate to={path || "/"} />
             }
 
         </div>

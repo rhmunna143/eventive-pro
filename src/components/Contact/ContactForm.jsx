@@ -16,7 +16,7 @@ function ContactForm() {
     };
 
     return (
-        <div className="max-w-md mx-auto">
+        <div className="max-w-md mx-auto my-20">
             <h2 className="text-2xl font-semibold text-white bg-pink-600 text-center p-6 rounded-md mb-5 mt-20">Contact Us</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>

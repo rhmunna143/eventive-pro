@@ -9,6 +9,7 @@ import Details from "../Pages/Details/Details";
 import PrivateRoute from "../Hooks/PrivateRoute";
 import About from "../Pages/About/About";
 import NotFound from "../Pages/Error/NotFound";
+import ContactForm from "../components/Contact/ContactForm";
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
                 element: <About></About>
             },
             
+            {
+                path: "/contact",
+                element: <ContactForm></ContactForm>
+            },
+
             {
                 path: "/registration",
                 element: <Registration></Registration>

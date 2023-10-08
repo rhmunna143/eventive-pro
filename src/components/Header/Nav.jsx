@@ -9,7 +9,7 @@ const Nav = () => {
     const { user, logout, loading } = useContext(AllContext)
 
     return (
-        <div className="max-w-6xl mx-auto flex justify-between items-center py-5 flex-wrap px-4 lg:px-0">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row flex-wrap justify-center md:gap-5 lg:justify-between items-center py-5 px-4 lg:px-0">
             <Link to="/">
                 <div className="logo">
                     <h2 className="text-4xl font-bold font-primary text-pink-600 mb-4 md:mb-0">Eventive</h2>
@@ -23,7 +23,7 @@ const Nav = () => {
             {
                 loading ? <LoaderComponent /> :
 
-                    <div className="user flex items-center gap-4">
+                    <div className="user flex items-center mt-4 md:mt-0 gap-4">
 
                         {
                             user && <p>{user?.displayName}</p>

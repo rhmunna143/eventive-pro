@@ -3,7 +3,7 @@
 function NotFound() {
     return (
         <div className="flex items-center justify-center h-screen">
-            <div className="text-center">
+            <div className="text-center font-primary">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="200"
@@ -26,7 +26,7 @@ function NotFound() {
                 </p>
                 <button
                     onClick={() => window.history.back()}
-                    className="mt-4 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300"
+                    className="mt-4 bg-pink-600 text-white px-4 py-2 rounded-sm hover:bg-pink-700 transition duration-300"
                 >
                     Go Back
                 </button>

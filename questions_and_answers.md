@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`
 
-<i>Write your explanation here</i>
+<i>The JS `let` keyword is generally used to declare a variable. Using this keyword, we can declare a variable and initialize its value later. In the question, the `greeting` variable is declared but not initialized. In the next line, it is initialized or assigned a value `{}` an empty object. So, the output will be an empty object </i>
 
 </p>
 </details>

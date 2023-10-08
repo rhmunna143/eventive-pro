@@ -30,6 +30,8 @@ const Details = () => {
                 <p className="mt-2">{description}</p>
 
                 <p className="mt-2">{details}</p>
+
+                <button className='bg-pink-600 text-white py-1 px-4 mt-4 rounded-sm hover:bg-black'>Book Us Now</button>
             </div>
         </div>
     );

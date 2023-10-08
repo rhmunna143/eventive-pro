@@ -6,6 +6,7 @@ import TeamCmp from "../Pages/Team/Team";
 import Registration from "../Pages/Registration/Registration";
 import Login from "../Pages/Login/Login";
 import Details from "../Pages/Details/Details";
+import PrivateRoute from "../Hooks/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -20,12 +21,12 @@ const router = createBrowserRouter([
 
             {
                 path: "/gallery",
-                element: <GalleryComp></GalleryComp>
+                element: <PrivateRoute><GalleryComp></GalleryComp></PrivateRoute>
             },
 
             {
                 path: "/team",
-                element: <TeamCmp></TeamCmp>
+                element: <PrivateRoute><TeamCmp></TeamCmp></PrivateRoute>
             },
 
             {
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
             {
                 path: "/event/details/:id",
                 loader: () => fetch("./data.json"),
-                element: <Details></Details>
+                element: <PrivateRoute><Details></Details></PrivateRoute>
             }
         ]
     }

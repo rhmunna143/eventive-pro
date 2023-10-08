@@ -1,7 +1,14 @@
+import { useContext } from "react";
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
+import { AllContext } from "../../Hooks/ContextProvider";
+import { Navigate, useLocation } from "react-router-dom";
 
 
 const Continue = () => {
+    const { googleSignIn, facebookLogin, socialUser } = useContext(AllContext)
+    const location = useLocation()
+
+    console.log(location);
 
     const handleSocialLogin = (loginType) => {
 
@@ -15,19 +22,24 @@ const Continue = () => {
             <hr />
             <div className="flex justify-evenly items-center mt-4">
                 <div className="ggl">
-                    <button onClick={() => handleSocialLogin()} className="bg-pink-600 text-white hover:bg-black py-1 px-4 rounded-sm flex items-center">
+                    <button onClick={() => handleSocialLogin(googleSignIn)} className="bg-pink-600 text-white hover:bg-black py-1 px-4 rounded-sm flex items-center">
                         <FaGoogle></FaGoogle>
                         oogle
                     </button>
                 </div>
 
                 <div className="fbu">
-                    <button onClick={() => handleSocialLogin()} className="bg-pink-600 text-white hover:bg-black py-1 px-4 rounded-sm flex items-center">
+                    <button onClick={() => handleSocialLogin(facebookLogin)} className="bg-pink-600 text-white hover:bg-black py-1 px-4 rounded-sm flex items-center">
                         <FaFacebookSquare></FaFacebookSquare>
                         acebook
                     </button>
                 </div>
             </div>
+
+            {
+                socialUser &&
+                <Navigate to="/" />
+            }
         </div>
     );
 };

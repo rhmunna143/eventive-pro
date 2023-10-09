@@ -8,6 +8,9 @@
 - AOS Animation
 - Single Page Application using R-Router-DOM
 - Dynamic Route Private
+- Number Counter
+- Marquee
+- Navigate using state path
 
 ### [Live Link-1: ](https://eventivepro.netlify.app/) (Netlify)
 https://eventivepro.netlify.app/

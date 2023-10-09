@@ -52,21 +52,25 @@ const NavMenu = () => {
                 Contact
             </NavLink>
 
-            <NavLink to="/registration"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active text-white bg-pink-600 py-1 px-2 rounded-sm" : "text-pink-600"
-                }
-            >
-                Registration
-            </NavLink>
+            {
+                !user && <NavLink to="/registration"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active text-white bg-pink-600 py-1 px-2 rounded-sm" : "text-pink-600"
+                    }
+                >
+                    Registration
+                </NavLink>
+            }
 
-            <NavLink to="/login"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active text-white bg-pink-600 py-1 px-2 rounded-sm" : "text-pink-600"
-                }
-            >
-                Login
-            </NavLink>
+            {
+                !user && <NavLink to="/login"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "active text-white bg-pink-600 py-1 px-2 rounded-sm" : "text-pink-600"
+                    }
+                >
+                    Login
+                </NavLink>
+            }
         </div>
     );
 };

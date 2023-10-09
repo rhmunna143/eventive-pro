@@ -54,6 +54,8 @@ const ContextProvider = ({ children }) => {
         .catch(err => {
             toast.err(err?.message)
         })
+
+        setSocialUser("")
     }
 
     const facebookLogin = () => {

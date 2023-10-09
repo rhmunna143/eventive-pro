@@ -11,7 +11,7 @@ import toast from "react-hot-toast";
 const Login = () => {
     const { login, path } = useContext(AllContext)
     const [name, setName] = useState(null)
-    console.log(path);
+
     const handleLogIn = (event) => {
         event.preventDefault()
 

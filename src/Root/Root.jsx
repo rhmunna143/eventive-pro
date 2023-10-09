@@ -12,7 +12,7 @@ const Root = () => {
     }, [])
     
     return (
-        <div className="font-primary">
+        <div className="font-primary" style={{ overflowX: "hidden" }}>
             <Nav></Nav>
             <Outlet></Outlet>
             <Footer></Footer>

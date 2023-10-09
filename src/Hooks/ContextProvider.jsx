@@ -15,7 +15,6 @@ const ContextProvider = ({ children }) => {
     const facebookProvider = new FacebookAuthProvider();
     const [path, setPath] = useState("")
 
-    console.log(user?.photoURL, user);
     const register = (email, password) => {
         setLoading(true)
 
